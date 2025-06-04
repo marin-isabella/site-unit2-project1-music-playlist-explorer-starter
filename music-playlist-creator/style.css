@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -22,8 +22,13 @@ header {
     padding-bottom: 30px;
 }
 
+.card {
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
 .row1-playlist-cards .top-left-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -35,7 +40,6 @@ header {
   }
 
 .row1-playlist-cards .top-second-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -47,7 +51,6 @@ header {
   }
 
 .row1-playlist-cards .top-third-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -59,7 +62,6 @@ header {
 }
 
 .row1-playlist-cards .top-right-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -84,7 +86,6 @@ header {
 }
 
 .row2-playlist-cards .bottom-left-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -96,7 +97,6 @@ header {
   }
 
 .row2-playlist-cards .bottom-second-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -108,7 +108,6 @@ header {
   }
 
 .row2-playlist-cards .bottom-third-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
@@ -120,7 +119,6 @@ header {
   }
 
 .row2-playlist-cards .bottom-right-card {
-    border: solid black 3px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 10px;
