@@ -3,20 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Music Playlist Explorer</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <!-- Your header content here -->
+        <h1>Music Playlist Explorer</h1>
     </header>
 
-    <main> 
+    <main>
         <!-- Your main content here -->
+        <section class="playlist-cards">
+            <section class="row1-playlist-cards">
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                    <article class="top-left-card">
+                        <img src="assets/img/song.png" alt="song image" width="200">
+                        <h3>Playlist Title</h3>
+                        <p>Creator Name</p>
+                        <p> Heart Count</p>
+                    </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                    <article class="top-second-card">
+                        <img src="assets/img/song.png" alt="song image" width="200">
+                        <h3>Playlist Title</h3>
+                        <p>Creator Name</p>
+                        <p> Heart Count</p>
+                    </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+
+                <article class="top-third-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                <article class="top-right-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+            </section>
+
+
+            <section class="row2-playlist-cards">
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                <article class="bottom-left-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                <article class="bottom-second-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                <article class="bottom-third-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+
+                <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creator: 'Creator Name', songs:  ['Song Title', 'Song Title', 'Song Title']})">
+                <article class="bottom-right-card">
+                    <img src="assets/img/song.png" alt="song image" width="200">
+                    <h3>Playlist Title</h3>
+                    <p>Creator Name</p>
+                    <p> Heart Count</p>
+                </article>
+                </div>
+
+            </section>
+
+        </section>
     </main>
+
+    <!-- Modal Structure -->
+    <div id="playlistModal" class="modal-overlay">
+        <div class="modal-content">
+           <span class="close">&times;</span>
+           <h1 id="playlistTitle"></h1>
+           <img id="playlistImage" src="assets/img/playlist.png" alt="Playlist Image">
+           <p id="creatorName"></p>
+           <div id="songList"></div>
+        </div>
+     </div>
+
+
 
     <footer>
         <!-- Your footer content here -->
