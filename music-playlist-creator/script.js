@@ -68,8 +68,12 @@ function createPlaylistsElement(playlist) {
       <img src=${playlist.playlist_art} alt="song image" width="200">
        <h3>${playlist.playlist_name}</h3>
        <p>${playlist.playlist_author}</p>
-       <button class="like-button">Likes: ${playlist.like}</button>
+       <button id="like-button"></button>
+       <p id="likeCount">${playlist.like}</p>
+
    `;
+
+{/* <img id="likeBtn" src="./assets/img/like.png"></img> */}
 
    div.addEventListener('click', () => {
       openModal(playlist);
@@ -78,3 +82,13 @@ function createPlaylistsElement(playlist) {
 
    return div;
 }
+
+
+// like functionality:
+// let likeBtn = document.getElementById('like-button');
+// let likeCount = 0;
+// likeButton.addEventListener('click', function () {
+//    console.log(playlist.like);
+
+
+// });
