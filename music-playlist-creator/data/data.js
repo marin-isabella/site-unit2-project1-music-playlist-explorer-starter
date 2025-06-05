@@ -309,5 +309,161 @@ const playlists = [
 			}
 			],
 			"like": 0
+		},
+		{
+			"playlistId": 262728293,
+			"playlist_name": "Chill Vibes",
+			"playlist_author": "Liam Johnson",
+			"playlist_art": "./assets/img/playlist.png",
+			"songs": [
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Sunset Lover",
+					"artist": "Petit Biscuit",
+					"duration": "3:58"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Cold Little Heart",
+					"artist": "Michael Kiwanuka",
+					"duration": "9:57"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Electric Feel",
+					"artist": "MGMT",
+					"duration": "3:50"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Breezeblocks",
+					"artist": "alt-J",
+					"duration": "3:48"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Riptide",
+					"artist": "Vance Joy",
+					"duration": "3:24"
+				}
+			],
+			"like": 0
+		},
+		{
+			"playlistId": 303132333,
+			"playlist_name": "Road Trip Tunes",
+			"playlist_author": "Olivia Green",
+			"playlist_art": "./assets/img/playlist.png",
+			"songs": [
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Shut Up and Dance",
+					"artist": "WALK THE MOON",
+					"duration": "3:19"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Life is a Highway",
+					"artist": "Tom Cochrane",
+					"duration": "4:26"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Take It Easy",
+					"artist": "Eagles",
+					"duration": "3:32"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Sweet Home Alabama",
+					"artist": "Lynyrd Skynyrd",
+					"duration": "4:43"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Hotel California",
+					"artist": "Eagles",
+					"duration": "6:31"
+				}
+			],
+			"like": 0
+		},
+		{
+			"playlistId": 343536373,
+			"playlist_name": "Indie Essentials",
+			"playlist_author": "Noah White",
+			"playlist_art": "./assets/img/playlist.png",
+			"songs": [
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Dog Days Are Over",
+					"artist": "Florence + The Machine",
+					"duration": "4:12"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Pumped Up Kicks",
+					"artist": "Foster The People",
+					"duration": "3:59"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Somebody Else",
+					"artist": "The 1975",
+					"duration": "5:47"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Electric Feel",
+					"artist": "MGMT",
+					"duration": "3:50"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Young Folks",
+					"artist": "Peter Bjorn and John",
+					"duration": "4:39"
+				}
+			],
+			"like": 0
+		},
+		{
+			"playlistId": 383940414,
+			"playlist_name": "Jazz Classics",
+			"playlist_author": "Emma Davis",
+			"playlist_art": "./assets/img/playlist.png",
+			"songs": [
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Take Five",
+					"artist": "Dave Brubeck",
+					"duration": "5:24"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "So What",
+					"artist": "Miles Davis",
+					"duration": "9:22"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "Feeling Good",
+					"artist": "Nina Simone",
+					"duration": "2:54"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "My Favorite Things",
+					"artist": "John Coltrane",
+					"duration": "13:41"
+				},
+				{
+					"song_cover": "./assets/img/song.png",
+					"title": "What a Wonderful World",
+					"artist": "Louis Armstrong",
+					"duration": "2:21"
+				}
+			],
+			"like": 0
 		}
 ]

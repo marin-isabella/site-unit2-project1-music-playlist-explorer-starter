@@ -6,7 +6,7 @@ span.addEventListener('click', closeModal);
 function openModal(playlist) {
    document.getElementById('playlistTitle').innerText = playlist.playlist_name;
    document.getElementById('playlistImage').src = playlist.playlist_art;
-   document.getElementById('creatorName').innerText = `Creator Name: ${playlist.playlist_author}`;
+   document.getElementById('creatorName').innerText = `Created by ${playlist.playlist_author}`;
 
    const songListElement = document.getElementById('songList');
    songListElement.innerHTML = '<h3>Songs:</h3>';
