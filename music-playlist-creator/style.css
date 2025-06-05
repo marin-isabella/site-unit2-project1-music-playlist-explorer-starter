@@ -12,13 +12,8 @@ header {
 
 .playlist-cards {
     display: flex;
-    justify-content: center;
-}
-
-.row {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
     margin: 20px;
     max-width: 1133px;
@@ -69,6 +64,5 @@ header {
 footer {
     background-color: #3380ff;
     padding: 20px;
-
-    width: 100vw;
+    bottom: 0;
 }
