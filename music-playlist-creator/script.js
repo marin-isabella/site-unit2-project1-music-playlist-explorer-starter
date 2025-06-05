@@ -3,12 +3,33 @@ const modal = document.getElementById("modal-overlay");
 const span = document.getElementsByClassName("close")[0];
 
 span.addEventListener('click', closeModal);
-
 function openModal(playlist) {
    document.getElementById('playlistTitle').innerText = playlist.playlist_name;
    document.getElementById('playlistImage').src = playlist.playlist_art;
    document.getElementById('creatorName').innerText = `Creator Name: ${playlist.playlist_author}`;
-   document.getElementById('songList').innerHTML = `<strong>List of Songs:</strong> ${playlist.songs.join(', ')}`;
+
+   const songListElement = document.getElementById('songList');
+   songListElement.innerHTML = '<h3>Songs:</h3>';
+
+   const songsContainer = document.createElement('div');
+   songsContainer.classList.add('songs-container');
+
+   playlist.songs.forEach(song => {
+      const songElement = document.createElement('div');
+      songElement.classList.add('song');
+      songElement.innerHTML = `
+         <img src="${song.song_cover}" alt="${song.title} cover" width="50">
+         <div class="song-info">
+            <h4>${song.title}</h4>
+            <p>${song.artist}</p>
+            <p>${song.duration}</p>
+         </div>
+      `;
+      songsContainer.appendChild(songElement);
+   });
+
+   songListElement.appendChild(songsContainer);
+
    modal.style.display = "block";
 }
 
@@ -52,6 +73,7 @@ function createPlaylistsElement(playlist) {
 
    div.addEventListener('click', () => {
       openModal(playlist);
+
    });
 
    return div;
