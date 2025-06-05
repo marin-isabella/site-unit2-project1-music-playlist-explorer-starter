@@ -3,6 +3,7 @@ const modal = document.getElementById("modal-overlay");
 const span = document.getElementsByClassName("close")[0];
 
 function openModal(playlist) {
+   console.log("hi");
    document.getElementById('playlistTitle').innerText = playlist.name;
    document.getElementById('playlistImage').src = playlist.imageUrl;
    document.getElementById('creatorName').innerText = `Creator Name: ${playlist.creator}`;
