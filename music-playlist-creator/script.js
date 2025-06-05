@@ -3,20 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function loadPlaylists() {
-   console.log("playlists loaded!");
    const playlistContainer = document.querySelector(".playlist-cards");
-   console.log("hi");
+
    playlists.forEach((playlist) => {
-      console.log("meow");
-      console.log(playlist);
       const element = createPlaylistsElement(playlist);
-      console.log(element);
       playlistContainer.appendChild(element);
    })
 }
 
 function createPlaylistsElement(playlist) {
-   console.log("createPlaylistsElement called!")
    const div = document.createElement('div');
    div.className = 'card';
    div.innerHTML = `
@@ -33,7 +28,6 @@ function createPlaylistsElement(playlist) {
 // const span = document.getElementsByClassName("close")[0];
 
 // function openModal(playlist) {
-//    console.log("hi");
 //    document.getElementById('playlistTitle').innerText = playlist.name;
 //    document.getElementById('playlistImage').src = playlist.imageUrl;
 //    document.getElementById('creatorName').innerText = `Creator Name: ${playlist.creator}`;
