@@ -8,14 +8,6 @@ const playlists = [
         "like": 0
 	},
     {
-		"playlistId": 987654321,
-		"playlist_name": "Summer Vibes",
-		"playlist_author": "Liam Chen",
-		"playlist_art": "./assets/img/playlist.png",
-		"songs": ["Sunshine", "Beachin'", "Cheeseburger in Paradise", "Summertime", "School's Out"],
-        "like": 0
-	},
-    {
 		"playlistId": 111222333,
 		"playlist_name": "Workout Mix",
 		"playlist_author": "Ava Lee",
