@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadPlaylists() {
    const playlistContainer = document.querySelector(".playlist-cards");
-
+   // input validation for if playlists is empty
+   if (playlists.length === 0) {
+      playlistContainer.innerHTML = `<h2>No Playlists Added</h2>`;
+   }
    playlists.forEach((playlist) => {
+
       const element = createPlaylistsElement(playlist);
       playlistContainer.appendChild(element);
    })
@@ -18,7 +22,7 @@ function createPlaylistsElement(playlist) {
       <img src=${playlist.playlist_art} alt="song image" width="200">
        <h3>${playlist.playlist_name}</h3>
        <p>${playlist.playlist_author}</p>
-       <button>Likes: ${playlist.like}</button>
+       <button class="like-button">Likes: ${playlist.like}</button>
    `;
    return div;
 }
