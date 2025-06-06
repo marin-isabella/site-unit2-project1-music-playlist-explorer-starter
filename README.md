@@ -160,7 +160,7 @@ If I had more time, I would prioritize completing more of the stretch goals. I w
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+My project demo went well in that I was able to demonstrate all of the core features. Something my peer did that I would like to try next time is improving the UI of the project significantly. While my UI is visually appealing, it is still quite simple compared to other projects that were demoed. For the next time, I hope to accomplish more stretch goals to build a more technically challenging application, as well.
 
 ### Open-source libraries used
 
