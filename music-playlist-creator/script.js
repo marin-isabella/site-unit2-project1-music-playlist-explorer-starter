@@ -102,16 +102,21 @@ function createPlaylistsElement(playlist) {
    const div = document.createElement('div');
    div.classList.add('card');
    div.innerHTML = `
-      <img src=${playlist.playlist_art} alt="song image" width="200">
-       <h3>${playlist.playlist_name}</h3>
-       <p>${playlist.playlist_author}</p>
-       <div class="like-container">
-         <button class="like-button">
-           <img src="./assets/img/empty_heart.png" alt="Like" width=20px>
-         </button>
-         <span class="like-count">${playlist.like}</span>
-       </div>
-   `;
+   <img src=${playlist.playlist_art} alt="song image" width="200">
+    <h3>${playlist.playlist_name}</h3>
+    <p>${playlist.playlist_author}</p>
+    <div class="buttons-container">
+      <div class="like-container">
+        <button class="like-button">
+          <img src="./assets/img/empty_heart.png" alt="Like" width=20px>
+        </button>
+        <span class="like-count">${playlist.like}</span>
+      </div>
+      <button class="delete-button">
+        <img src="./assets/img/delete.png" alt="Delete" width=20px>
+      </button>
+    </div>
+`;
 
    div.addEventListener('click', () => {
       openModal(playlist);
@@ -136,6 +141,12 @@ function createPlaylistsElement(playlist) {
       // toggles heart image color between red and blue (red for not liked, blue for liked)
       likeImage.src = playlist.like === 0 ? './assets/img/empty_heart.png' : './assets/img/heart.png';
 
+   });
+
+   const deleteButton = div.querySelector('.delete-button');
+   deleteButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+         document.querySelector('.playlist-cards').removeChild(div);
    });
 
    return div;

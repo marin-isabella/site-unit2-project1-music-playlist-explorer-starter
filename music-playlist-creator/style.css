@@ -91,23 +91,32 @@ main {
     background-color: #e1e3e5;
 }
 
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .like-container {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    gap: 2px;
 }
 
 .like-button {
     background: none;
     border: none;
-    padding: 5px;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .like-button:hover {
     transform: scale(2);
 }
-
 
 .like-button img {
     display: block;
@@ -115,6 +124,17 @@ main {
 
 .like-count {
     font-weight: bold;
+    margin-left: 2px;
+}
+
+.delete-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+}
+
+.delete-button:hover {
+    transform: scale(2);
 }
 
 #shuffle-container {
