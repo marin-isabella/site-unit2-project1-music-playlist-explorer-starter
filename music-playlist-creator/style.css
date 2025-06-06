@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    min-height: 100vh;
     top: 0;
 }
 
@@ -62,8 +63,7 @@ header h1 {
 main {
     display: flex;
     justify-content: center;
-    padding: 20px;
-}
+unluigiccchcggnlgekjvenjbckeeilb}
 
 .playlist-cards {
     display: flex;
@@ -224,8 +224,10 @@ main {
     min-height: calc(100vh - 150px);
     margin: auto;
     gap: 40px;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #left-feature {
@@ -270,10 +272,13 @@ main {
     margin: 10px;
     height: auto;
     overflow-y: auto;
+    flex-wrap: wrap;
 }
 
 footer {
     background-color: #3380ff;
     padding: 20px;
     bottom: 0;
+    position: fixed;
+    width: 100%;
 }
