@@ -146,7 +146,24 @@ function createPlaylistsElement(playlist) {
    const deleteButton = div.querySelector('.delete-button');
    deleteButton.addEventListener('click', (event) => {
       event.stopPropagation();
-         document.querySelector('.playlist-cards').removeChild(div);
+
+      let playlistIndex = 0;
+      for (let i = 0; i < playlists.length; i++) {
+         if (playlists[i].playlistID === playlist.playlistID) {
+            playlistIndex = i;
+         }
+      }
+
+      if (playlistIndex !== -1) {
+         playlists.splice(playlistIndex, 1);
+      }
+      document.querySelector('.playlist-cards').removeChild(div);
+
+      if (playlists.length === 0) {
+         const playlistContainer = document.querySelector(".playlist-cards");
+         playlistContainer.innerHTML = `<h2>No Playlists Added</h2>`;
+      }
+
    });
 
    return div;

@@ -298,7 +298,8 @@ main {
 
 footer {
     background-color: #3380ff;
-    padding: 20px;
+    color: white;
+    padding: 2px;
     bottom: 0;
     position: fixed;
     width: 100%;
