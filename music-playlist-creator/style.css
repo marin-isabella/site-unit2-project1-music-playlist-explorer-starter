@@ -28,10 +28,42 @@ header {
     background-color: #e1e3e5;
 }
 
-#like-button {
-    border: none;
-    background-image: url("assets/img/heart.png");
+.like-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
+
+.like-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.like-button:hover {
+    transform: scale(2);
+}
+
+
+.like-button img {
+    display: block;
+}
+
+.like-count {
+    font-weight: bold;
+    color: #d20c0cca;
+}
+#shuffle-container {
+    display: flex;
+}
+
+#shuffle-button {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    border-radius: 2px;
+}
+
 
 #modal-overlay {
     display: none; /* Hidden by default */
@@ -83,7 +115,6 @@ header {
     cursor: pointer;
 }
 
-/* Styling for songs in modal */
 .songs-container {
     margin-top: 20px;
 }

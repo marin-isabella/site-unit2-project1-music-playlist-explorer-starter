@@ -68,27 +68,33 @@ function createPlaylistsElement(playlist) {
       <img src=${playlist.playlist_art} alt="song image" width="200">
        <h3>${playlist.playlist_name}</h3>
        <p>${playlist.playlist_author}</p>
-       <button id="like-button"></button>
-       <p id="likeCount">${playlist.like}</p>
-
+       <div class="like-container">
+         <button class="like-button">
+           <img src="./assets/img/heart.png" alt="Like" width="20">
+         </button>
+         <span class="like-count">${playlist.like}</span>
+       </div>
    `;
-
-{/* <img id="likeBtn" src="./assets/img/like.png"></img> */}
 
    div.addEventListener('click', () => {
       openModal(playlist);
+   });
+
+   const likeButton = div.querySelector('.like-button');
+
+   likeButton.addEventListener('click', (event) => {
+      // Prevents the click on the like button from opening the modal
+      event.stopPropagation();
+      if (playlist.like === 0) {
+         playlist.like++;
+      } else {
+         playlist.like--;
+      }
+
+      const likeCountElement = div.querySelector('.like-count');
+      likeCountElement.textContent = playlist.like;
 
    });
 
    return div;
 }
-
-
-// like functionality:
-// let likeBtn = document.getElementById('like-button');
-// let likeCount = 0;
-// likeButton.addEventListener('click', function () {
-//    console.log(playlist.like);
-
-
-// });
