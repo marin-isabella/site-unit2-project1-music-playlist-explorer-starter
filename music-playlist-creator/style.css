@@ -63,7 +63,8 @@ header h1 {
 main {
     display: flex;
     justify-content: center;
-unluigiccchcggnlgekjvenjbckeeilb}
+    padding: 20px;
+}
 
 .playlist-cards {
     display: flex;
