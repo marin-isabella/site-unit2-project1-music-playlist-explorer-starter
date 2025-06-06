@@ -149,11 +149,11 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics discusssed in the labs prepared me very well to complete this assignment. All of the core features had been briefly gone over in one of the four labs throughout the week. For instance, the labs taught important concepts such as DOM manipulation, event listeners, and fetching data from a data.js file. Additionally, the labs provided a good understanding on how to use flexbox to create a responsive app. However, the stretch goals did contain some features that were not covered within the labs. Still, the stretch goals seemed feasible to complete given sufficient time to independently research how to implement some of the stretch goal features.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
-Add your response here
+If I had more time, I would prioritize completing more of the stretch goals. I was able to implement the delete playlist functionality, however, I wish I had the time to additionally implement the add new playlists feature, edit exisiting playlists, the search functionality feature, and the sorting option feature. Furthermore, I also would have further refined the styling of the application, to include real song covers for the song images, and a differnent playlist image for each playlist.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
@@ -161,8 +161,8 @@ Add your response here
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- No open-source libraries were used in this project.
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+I want to give a special thank you to the CodePath instructors for their help throughout this project! Special thanks to Tabitha Hsia and Danny Burrow for their continued support.
