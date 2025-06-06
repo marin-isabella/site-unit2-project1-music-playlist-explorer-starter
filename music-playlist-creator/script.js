@@ -4,11 +4,11 @@ const span = document.getElementsByClassName("close")[0];
 
 span.addEventListener('click', closeModal);
 function openModal(playlist) {
-   document.getElementById('playlistTitle').innerText = playlist.playlist_name;
-   document.getElementById('playlistImage').src = playlist.playlist_art;
-   document.getElementById('creatorName').innerText = `Created by ${playlist.playlist_author}`;
+   document.getElementById('playlist-title').innerText = playlist.playlist_name;
+   document.getElementById('playlist-image').src = playlist.playlist_art;
+   document.getElementById('creator-name').innerText = `Created by ${playlist.playlist_author}`;
 
-   const songListElement = document.getElementById('songList');
+   const songListElement = document.getElementById('song-list');
    songListElement.innerHTML = '<h3>Songs:</h3>';
 
    const songsContainer = document.createElement('div');
@@ -50,12 +50,13 @@ window.addEventListener('click', (e) => {
 // JavaScript for Creating Playlists
 function loadPlaylists() {
    const playlistContainer = document.querySelector(".playlist-cards");
+
    // validation for if playlists is empty
    if (playlists.length === 0) {
       playlistContainer.innerHTML = `<h2>No Playlists Added</h2>`;
    }
-   playlists.forEach((playlist) => {
 
+   playlists.forEach((playlist) => {
       const element = createPlaylistsElement(playlist);
       playlistContainer.appendChild(element);
    })
@@ -85,6 +86,7 @@ function createPlaylistsElement(playlist) {
    likeButton.addEventListener('click', (event) => {
       // Prevents the click on the like button from opening the modal
       event.stopPropagation();
+
       if (playlist.like === 0) {
          playlist.like++;
       } else {

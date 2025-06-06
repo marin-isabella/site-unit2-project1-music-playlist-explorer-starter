@@ -64,7 +64,6 @@ header {
     border-radius: 2px;
 }
 
-
 #modal-overlay {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -75,39 +74,44 @@ header {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
- }
+}
+
 .modal-content {
     background-color: #fefefe;
-    margin: 3.5% auto; /* 15% from the top and centered */
+    margin: 3.5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px;
 }
 
-#playlistInfo {
+#playlist-info {
     display: flex;
 }
 
-#playlist-InnerInfo {
+#playlist-innerInfo {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     justify-content: center;
 }
-#playlistImage {
+
+#playlist-image {
     width: 150px;
 }
-#playlistTitle {
+
+#playlist-title {
     font-size: 20px;
     font-weight: bold;
 }
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: black;

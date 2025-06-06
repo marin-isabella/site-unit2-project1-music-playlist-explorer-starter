@@ -1,6 +1,6 @@
 const playlists = [
     {
-		"playlistId": 123456789,
+		"playlistID": 123456789,
 		"playlist_name": "EDM Favorites",
 		"playlist_author": "Isabella Marin",
 		"playlist_art": "./assets/img/playlist.png",
@@ -39,7 +39,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 111222333,
+		"playlistID": 111222333,
 		"playlist_name": "Workout Mix",
 		"playlist_author": "Ava Lee",
 		"playlist_art": "./assets/img/playlist.png",
@@ -78,7 +78,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 444555666,
+		"playlistID": 444555666,
 		"playlist_name": "Relaxation Station",
 		"playlist_author": "Ethan Kim",
 		"playlist_art": "./assets/img/playlist.png",
@@ -117,7 +117,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 777888999,
+		"playlistID": 777888999,
 		"playlist_name": "Throwback Thursday",
 		"playlist_author": "Mia Patel",
 		"playlist_art": "./assets/img/playlist.png",
@@ -155,7 +155,7 @@ const playlists = [
 		],
 		"like": 0
 	  },{
-		"playlistId": 101112131,
+		"playlistID": 101112131,
 		"playlist_name": "Focus Flow",
 		"playlist_author": "Julian Sanchez",
 		"playlist_art": "./assets/img/playlist.png",
@@ -194,7 +194,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 141516171,
+		"playlistID": 141516171,
 		"playlist_name": "Gaming Soundtrack",
 		"playlist_author": "Sophia Rodriguez",
 		"playlist_art": "./assets/img/playlist.png",
@@ -233,7 +233,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 181920212,
+		"playlistID": 181920212,
 		"playlist_name": "Love Songs",
 		"playlist_author": "Alexander Martin",
 		"playlist_art": "./assets/img/playlist.png",
@@ -272,7 +272,7 @@ const playlists = [
 		"like": 0
 	  },
 	  {
-		"playlistId": 222324252,
+		"playlistID": 222324252,
 		"playlist_name": "Dance Party",
 		"playlist_author": "Gabriella Brown",
 		"playlist_art": "./assets/img/playlist.png",
@@ -311,7 +311,7 @@ const playlists = [
 			"like": 0
 		},
 		{
-			"playlistId": 262728293,
+			"playlistID": 262728293,
 			"playlist_name": "Chill Vibes",
 			"playlist_author": "Liam Johnson",
 			"playlist_art": "./assets/img/playlist.png",
@@ -350,7 +350,7 @@ const playlists = [
 			"like": 0
 		},
 		{
-			"playlistId": 303132333,
+			"playlistID": 303132333,
 			"playlist_name": "Road Trip Tunes",
 			"playlist_author": "Olivia Green",
 			"playlist_art": "./assets/img/playlist.png",
@@ -389,7 +389,7 @@ const playlists = [
 			"like": 0
 		},
 		{
-			"playlistId": 343536373,
+			"playlistID": 343536373,
 			"playlist_name": "Indie Essentials",
 			"playlist_author": "Noah White",
 			"playlist_art": "./assets/img/playlist.png",
@@ -428,7 +428,7 @@ const playlists = [
 			"like": 0
 		},
 		{
-			"playlistId": 383940414,
+			"playlistID": 383940414,
 			"playlist_name": "Jazz Classics",
 			"playlist_author": "Emma Davis",
 			"playlist_art": "./assets/img/playlist.png",
