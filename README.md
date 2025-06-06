@@ -153,7 +153,7 @@ The topics discusssed in the labs prepared me very well to complete this assignm
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
-If I had more time, I would prioritize completing more of the stretch goals. I was able to implement the delete playlist functionality, however, I wish I had the time to additionally implement the add new playlists feature, edit exisiting playlists, the search functionality feature, and the sorting option feature. Furthermore, I also would have further refined the styling of the application, to include real song covers for the song images, and a differnent playlist image for each playlist.
+If I had more time, I would prioritize completing more of the stretch goals. I was able to implement the delete playlist functionality, however, I wish I had the time to additionally implement the add new playlists feature, edit exisiting playlists, the search functionality feature, and the sorting option feature. Furthermore, I also would have further refined the styling of the application, to include real song covers for the song images, and a different playlist image for each playlist.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
@@ -165,4 +165,4 @@ Add your response here
 
 ### Shout out
 
-I want to give a special thank you to the CodePath instructors for their help throughout this project! Special thanks to Tabitha Hsia and Danny Burrow for their continued support.
+I want to give a shout out to the CodePath instructors for their help throughout this project! Special thanks to Tabitha Hsia and Danny Burrow for their continued support in helping me with errors related to CSS!
