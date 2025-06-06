@@ -8,8 +8,55 @@ body {
 
 header {
     background-color: #3380ff;
-    padding: 5px;
-    color: white
+    padding: 15px 20px;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-bar li {
+    margin: 0;
+}
+
+.nav-bar a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.nav-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.nav-bar a.active {
+    background-color: white;
+    color: #3380ff;
+    font-weight: bold;
 }
 
 .playlist-cards {
@@ -21,9 +68,23 @@ header {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
     border-radius: 10px;
+    background-color: white;
+    width: 220px;
+    margin: 5px;;
+
+}
+
+.card:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-5px);  /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);  /* Enhanced shadow on hover */
 }
 
 .card:hover {
@@ -54,22 +115,23 @@ header {
 
 .like-count {
     font-weight: bold;
-    color: #d20c0cca;
 }
+
 #shuffle-container {
     display: flex;
     margin-top: 15px;
 }
 
 #shuffle-button {
-width: 150px; /* Same width as playlist image */
-    background-color: #3380ff; /* Same color as header/footer */
-    color: white; /* White text for better contrast */
+    width: 150px;
+    background-color: #3380ff;
+    color: white;
     border: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-    border-radius: 5px; /* Slightly more rounded corners */
+    border-radius: 5px;
     font-family: "Times New Roman", sans-serif;
     font-size: 16px;
+    padding: 10px;
 }
 
 #modal-overlay {
@@ -89,7 +151,7 @@ width: 150px; /* Same width as playlist image */
     margin: 3.5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -97,7 +159,7 @@ width: 150px; /* Same width as playlist image */
     display: flex;
 }
 
-#playlist-innerInfo {
+#playlist-inner-info {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -157,6 +219,59 @@ width: 150px; /* Same width as playlist image */
     color: #666;
 }
 
+.feature-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    margin: 0;
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#left-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    margin-top: 100px;
+    height: fit-content;
+}
+
+#feature-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#feature-title {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+}
+
+#feature-song-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    gap: 15px;
+    margin: 10px;
+    height: auto;
+    overflow-y: auto;
+}
 
 footer {
     background-color: #3380ff;
