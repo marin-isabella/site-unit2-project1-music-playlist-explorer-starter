@@ -3,11 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    top: 0;
 }
 
 header {
     background-color: #3380ff;
-    padding: 10px;
+    padding: 5px;
+    color: white
 }
 
 .playlist-cards {
@@ -56,12 +58,18 @@ header {
 }
 #shuffle-container {
     display: flex;
+    margin-top: 15px;
 }
 
 #shuffle-button {
+width: 150px; /* Same width as playlist image */
+    background-color: #3380ff; /* Same color as header/footer */
+    color: white; /* White text for better contrast */
     border: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-    border-radius: 2px;
+    border-radius: 5px; /* Slightly more rounded corners */
+    font-family: "Times New Roman", sans-serif;
+    font-size: 16px;
 }
 
 #modal-overlay {
