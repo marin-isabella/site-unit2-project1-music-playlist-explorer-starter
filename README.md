@@ -7,12 +7,13 @@ Estimated time spent: **20** hours spent in total
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-vzwy.onrender.com)
 
 ### How to Run this Application
-1. Clone the repository.
+1. Fork the repository.
+2. Clone the forked repository.
 3. Step into the folder:
     ```
     site-unit2-project1-music-playlist-explorer-starter/music-playlist-creator
     ```
-5. Open the index.html in a web browser.
+4. Open the index.html in a web browser.
 
 
 ### Application Features
