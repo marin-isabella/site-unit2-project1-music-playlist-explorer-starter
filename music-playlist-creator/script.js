@@ -71,7 +71,7 @@ function createPlaylistsElement(playlist) {
        <p>${playlist.playlist_author}</p>
        <div class="like-container">
          <button class="like-button">
-           <img src="./assets/img/heart.png" alt="Like" width="20">
+           <img src="./assets/img/heart.png" alt="Like" width=20px>
          </button>
          <span class="like-count">${playlist.like}</span>
        </div>
@@ -95,6 +95,10 @@ function createPlaylistsElement(playlist) {
 
       const likeCountElement = div.querySelector('.like-count');
       likeCountElement.textContent = playlist.like;
+
+      const likeImage = likeButton.querySelector('img');
+      // toggles heart image color between red and blue (red for not liked, blue for liked)
+      likeImage.src = playlist.like === 0 ? './assets/img/heart.png' : './assets/img/blue_heart.png';
 
    });
 
