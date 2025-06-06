@@ -48,6 +48,7 @@ function makeSongsList(songs) {
          </div>`;
       songsContainer.appendChild(songElement);
    });
+
    songListElement.appendChild(songsContainer);
 }
 
@@ -88,12 +89,13 @@ function loadPlaylists() {
    // validation for if playlists is empty
    if (playlists.length === 0) {
       playlistContainer.innerHTML = `<h2>No Playlists Added</h2>`;
+   } else {
+      playlists.forEach((playlist) => {
+         const element = createPlaylistsElement(playlist);
+         playlistContainer.appendChild(element);
+      })
    }
 
-   playlists.forEach((playlist) => {
-      const element = createPlaylistsElement(playlist);
-      playlistContainer.appendChild(element);
-   })
 }
 
 function createPlaylistsElement(playlist) {
