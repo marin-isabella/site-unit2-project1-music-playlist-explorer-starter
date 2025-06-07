@@ -141,11 +141,11 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 ### Walkthrough Video
 
 <div>
-    <a href="https://www.loom.com/share/5374128012da429dabae053d55463aad">
-      <p>Music Playlist Explorer Overview 🎶 - Watch Video</p>
+    <a href="https://www.loom.com/share/bc88b275179f4cb08b6935d7f21087b4">
+      <p>Music Playlist Explorer Project 🎶 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/5374128012da429dabae053d55463aad">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5374128012da429dabae053d55463aad-1ed63ab9d91619bf-full-play.gif">
+    <a href="https://www.loom.com/share/bc88b275179f4cb08b6935d7f21087b4">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/bc88b275179f4cb08b6935d7f21087b4-a01e272f668d5608-full-play.gif">
     </a>
 </div>
 
