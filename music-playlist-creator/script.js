@@ -99,51 +99,45 @@ function loadPlaylists() {
 }
 
 function createPlaylistsElement(playlist) {
-   const div = document.createElement('div');
-   div.classList.add('card');
-   div.innerHTML = `
+   const playlistElement = document.createElement('div');
+   playlistElement.classList.add('card');
+
+   playlistElement.innerHTML = `
    <img src=${playlist.playlist_art} alt="song image" width="200">
-    <h3>${playlist.playlist_name}</h3>
-    <p>${playlist.playlist_author}</p>
-    <div class="buttons-container">
+   <h3>${playlist.playlist_name}</h3>
+   <p>${playlist.playlist_author}</p>
+   <div class="buttons-container">
       <div class="like-container">
-        <button class="like-button">
-          <img src="./assets/img/empty_heart.png" alt="Like" width=20px>
-        </button>
-        <span class="like-count">${playlist.like}</span>
+      <button class="like-button">🖤</button>
+      <span class="like-count">${playlist.like}</span>
       </div>
       <button class="delete-button">
-        <img src="./assets/img/delete.png" alt="Delete" width=20px>
+      <img src="./assets/img/delete.png" alt="Delete" width=20px>
       </button>
-    </div>
-`;
+   </div>
+   `;
 
-   div.addEventListener('click', () => {
+   playlistElement.addEventListener('click', () => {
       openModal(playlist);
    });
 
-   const likeButton = div.querySelector('.like-button');
-
+   const likeButton = playlistElement.querySelector('.like-button');
    likeButton.addEventListener('click', (event) => {
       // Prevents the click on the like button from opening the modal
       event.stopPropagation();
-
-      if (playlist.like === 0) {
+      if (likeButton.textContent === "🖤") {
          playlist.like++;
+         likeButton.textContent = "❤️";
       } else {
          playlist.like--;
+         likeButton.textContent = "🖤";
       }
 
-      const likeCountElement = div.querySelector('.like-count');
+      const likeCountElement = playlistElement.querySelector('.like-count');
       likeCountElement.textContent = playlist.like;
-
-      const likeImage = likeButton.querySelector('img');
-      // toggles heart image color between red and blue (red for not liked, blue for liked)
-      likeImage.src = playlist.like === 0 ? './assets/img/empty_heart.png' : './assets/img/heart.png';
-
    });
 
-   const deleteButton = div.querySelector('.delete-button');
+   const deleteButton = playlistElement.querySelector('.delete-button');
    deleteButton.addEventListener('click', (event) => {
       event.stopPropagation();
 
@@ -157,14 +151,13 @@ function createPlaylistsElement(playlist) {
       if (playlistIndex !== -1) {
          playlists.splice(playlistIndex, 1);
       }
-      document.querySelector('.playlist-cards').removeChild(div);
+      document.querySelector('.playlist-cards').removeChild(playlistElement);
 
       if (playlists.length === 0) {
          const playlistContainer = document.querySelector(".playlist-cards");
          playlistContainer.innerHTML = `<h2>No Playlists Added</h2>`;
       }
-
    });
 
-   return div;
+   return playlistElement;
 }

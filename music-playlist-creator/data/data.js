@@ -36,7 +36,7 @@ const playlists = [
 				"duration": "2:54"
 			},
 		],
-		"like": 0
+		"like": 1
 	  },
 	  {
 		"playlistID": 111222333,
@@ -114,7 +114,7 @@ const playlists = [
 			"duration": "2:52"
 		  }
 		],
-		"like": 0
+		"like": 8
 	  },
 	  {
 		"playlistID": 777888999,
@@ -191,7 +191,7 @@ const playlists = [
 			"duration": "3:39"
 		  }
 		],
-		"like": 0
+		"like": 10
 	  },
 	  {
 		"playlistID": 141516171,
@@ -269,7 +269,7 @@ const playlists = [
 			"duration": "4:45"
 		  }
 		],
-		"like": 0
+		"like": 12
 	  },
 	  {
 		"playlistID": 222324252,
@@ -347,7 +347,7 @@ const playlists = [
 					"duration": "3:24"
 				}
 			],
-			"like": 0
+			"like": 5
 		},
 		{
 			"playlistID": 303132333,
